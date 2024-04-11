@@ -1,0 +1,4 @@
+spacy
+newspaper
+collections
+en_core_web_sm

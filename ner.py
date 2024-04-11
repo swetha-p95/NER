@@ -2,7 +2,12 @@ import streamlit as st
 import spacy
 from spacy import displacy
 from newspaper import Article
-from collections import Counter
+import subprocess
+
+def download_en_core_web_sm():
+    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+download_en_core_web_sm()
+import en_core_web_sm
 
 nlp = en_core_web_sm.load()
 from pprint import pprint
@@ -13,8 +18,9 @@ st.info("This app will take an input from the user and then prints the named ent
 
 
 text = st.text_area("Enter a paragraph")
-url = st.text_input("Enter an URL:")
 st.info("(or)")
+url = st.text_input("Enter an URL:")
+
 
 
 if(st.button("Analyze")):

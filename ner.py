@@ -2,11 +2,6 @@ import streamlit as st
 import spacy
 from spacy import displacy
 from newspaper import Article
-'''import subprocess
-
-def download_en_core_web_sm():
-    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
-download_en_core_web_sm()'''
 import en_core_web_sm
 
 nlp = en_core_web_sm.load()

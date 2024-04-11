@@ -1,3 +1,4 @@
 spacy
 newspaper3k
 lxml_html_clean
+en_core_web_sm

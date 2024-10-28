@@ -1,0 +1,1 @@
+This repository contains the code for a Streamlit app that performs Named Entity Recognition (NER) on news articles using the spaCy library. In the app, the input can either be pasted as text or the url of the news article can be provided. 
